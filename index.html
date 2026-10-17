@@ -7,7 +7,7 @@
     <style>
         :root {
             --primary-color: #1e293b; /* Azul académico oscuro */
-            --accent-color: #0284c7;  /* Azul formal para resaltar */
+            --accent-color: #38bdf8;  /* Azul claro brillante para resaltar */
             --bg-color: #f8fafc;      /* Fondo gris claro limpio */
             --text-color: #334155;    /* Texto suave para lectura */
         }
@@ -93,11 +93,18 @@
             display: block;
         }
 
+        /* Sección de aplicación con fondo morado oscuro / casi negro y texto blanco */
         .application-section {
-            background-color: #f1f5f9;
+            background-color: #130a1f; 
+            color: #f8fafc;            
             border-left: 4px solid var(--accent-color);
-            padding: 24px;
+            padding: 28px;
             border-radius: 0 12px 12px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .application-section h2 {
+            color: #ffffff;
         }
 
         .application-section p:last-child {
@@ -106,7 +113,10 @@
 
         .highlight-text {
             font-weight: 600;
-            color: var(--primary-color);
+            color: var(--accent-color);
+            background: rgba(56, 189, 248, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -114,7 +124,7 @@
 
 <div class="main-container">
     
-    <!-- ENCABEZADO ACTUALIZADO -->
+    <!-- ENCABEZADO -->
     <header>
         <h1>Circunferencia unitaria</h1>
         <p class="group-label">Grupo 1</p>
@@ -136,14 +146,13 @@
         <h2>Grafica</h2>
         <div class="video-wrapper">
             <video controls preload="metadata">
-                <!-- Edita la ruta dentro de src="" cuando tengas el nombre de tu carpeta -->
                 <source src="video.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de video HTML5.
             </video>
         </div>
     </section>
 
-    <!-- TERCERA SECCIÓN -->
+    <!-- TERCERA SECCIÓN (SECCIÓN MORADO OSCURO Y TEXTO BLANCO) -->
     <section class="application-section">
         <h2>Explicacion de grafica: Jostick utilizacion de la circunferencia unitaria en la vida real</h2>
         <p>
